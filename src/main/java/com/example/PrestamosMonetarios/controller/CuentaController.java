@@ -15,7 +15,7 @@ import java.util.List;
 
 @RestController
 public class CuentaController {
-
+/*
     @Autowired
     public PrestamoServiceImp prestamoServiceImp;
 
@@ -28,5 +28,5 @@ public class CuentaController {
     public ResponseEntity<?> nuevaCuenta(@RequestBody Cuenta cuenta){
         prestamoServiceImp.nuevaCuenta(cuenta);
         return new ResponseEntity<>("Se ha creado la cuenta nueva", HttpStatus.CREATED);
-    }
+    }*/
 }

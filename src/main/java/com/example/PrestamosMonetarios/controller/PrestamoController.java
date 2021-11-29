@@ -1,13 +1,11 @@
 package com.example.PrestamosMonetarios.controller;
 
 import com.example.PrestamosMonetarios.entity.Prestamo;
-import com.example.PrestamosMonetarios.repository.CuentaDao;
 import com.example.PrestamosMonetarios.service.PrestamoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.mvc.condition.ParamsRequestCondition;
 
 import java.util.*;
 
@@ -17,8 +15,8 @@ public class PrestamoController {
     @Autowired
     private PrestamoService prestamoService;
 
-    @Autowired
-    private CuentaDao cuentaDao;
+    //@Autowired
+    //private CuentaDao cuentaDao;
 
     @PostMapping("/nuevo-prestamo")
     public ResponseEntity<?> nuevoPrestamo(@RequestBody Prestamo prestamo){

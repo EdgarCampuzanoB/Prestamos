@@ -8,17 +8,12 @@ import lombok.Setter;
 
 import javax.persistence.*;
 
-@Entity
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "Cuentas")
-@JsonIgnoreProperties(ignoreUnknown = true)
 public class Cuenta {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer idCuenta;
     private String tipoCuenta;
     private String usuario;
